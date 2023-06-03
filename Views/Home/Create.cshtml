@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Currency Conversion";
+    
+}
+
+<h2>Currency Conversion</h2>
+<form action="~/Home/Create" method="post">
+    <table align="center">
+        <tr>
+            <td><label>Enter Amount(dollers)</label></td>
+            <td><input type="text" name="UserInput" value="" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Get" class="btn btn-success" /></td>
+            <td></td>
+        </tr>
+        <tr><td>Entered Amount : </td><td>@ViewBag.UserInput</td></tr>
+        <tr><td>@ViewBag.UserOutPut</td></tr>
+       
+
+    </table>
+
+</form>
+
